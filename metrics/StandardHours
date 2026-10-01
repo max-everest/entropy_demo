@@ -1,10 +1,10 @@
 ,CASE  
-	WHEN DayofWeek = 1 THEN MondayMinutes
-	WHEN DayofWeek = 2 THEN TuesdayMinutes
-	WHEN DayofWeek = 3 THEN WednesdayMinutes
-	WHEN DayofWeek = 4 THEN ThursdayMinutes
-	WHEN DayofWeek = 5 THEN FridayMinutes
-	WHEN DayofWeek = 6 THEN SaturdayMinutes
-	WHEN DayofWeek = 7 THEN SundayMinutes
+	WHEN day_of_week = 1 THEN monday_minutes
+	WHEN day_of_week = 2 THEN tuesday_minutes
+	WHEN day_of_week = 3 THEN wednesday_minutes
+	WHEN day_of_week = 4 THEN thursday_minutes
+	WHEN day_of_week = 5 THEN friday_minutes
+	WHEN day_of_week = 6 THEN saturday_minutes
+	WHEN day_of_week = 7 THEN sunday_minutes
 	ELSE 0 
 END / 60.00 
